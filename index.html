@@ -1,0 +1,545 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MD KAHMI Kabupaten Sleman</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <header>
+          <div class="header-left">
+            <img src="img/kahmi.png" alt="" />
+            <div class="title">
+              <h3>Majelis daerah kahmi <span>Kabupaten Sleman</span></h3>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="menu">
+              <a href="index.html">Beranda</a>
+              <a href="profile.html">Profil</a>
+              <a href="berita.html">Berita</a>
+              <a>Data Pengurus</a>
+              <a href="alumni.html">Data Alumni</a>
+              <a href="#program-kerja">Program Kerja</a>
+              <a>AD RT</a>
+              <a>Kontak</a>
+            </div>
+            <div class="btn-menu" onclick="openNav()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <a href="index.html">Beranda</a>
+              <a href="profile.html">Profil</a>
+              <a href="berita.html">Berita</a>
+              <a href="#">Data Pengurus</a>
+              <a href="alumni.html">Data Alumni</a>
+              <a href="#program-kerja">Program Kerja</a>
+              <a href="#">AD RT</a>
+              <a href="#">Kontak</a>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- <section class="carousel">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://kahmibonebol.or.id/l-content/uploads/9fc691c7-5b88-4193-a74d-efb46d96c80e.jpg?1661834320"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://kahmibonebol.or.id/l-content/uploads/312218c4-7705-4624-945d-181640c030e5.jpg?1661834320"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+              src="https://kahmibonebol.or.id/l-content/uploads/ketuaJJP-MILAD_74.jpg?1661834320"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://kahmibonebol.or.id/l-content/uploads/IMG-20210802-WA0017.jpg?1661834320"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section> -->
+
+      <div class="container">
+        <section class="info">
+          <div class="info-desc">
+            <div class="parent">
+              <div class="div1">
+                <h2>Apa itu Kahmi ?</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  reprehenderit velit quidem porro esse.
+                </p>
+                <div class="btn-read">
+                  Baca Selengkapnya
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="div2">
+                <h2>Hahahaha</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus ipsum nobis necessitatibus dolorem! Ab dolore nihil,
+                </p>
+                <div class="btn-read">
+                  Baca Selengkapnya
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="div3">
+                <h2>Hahahaha</h2>
+                <p>
+                  Delectus ipsum nobis necessitatibus dolorem! Ab dolore nihil,
+                  temporibus earum tenetur possimus cum nemo tempore ipsum ea,
+                </p>
+                <div class="btn-read">
+                  Baca Selengkapnya
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="div4"></div>
+            </div>
+            <div class="info-title">
+              <h5>Service</h5>
+              <h3>Our Services <span>Include</span></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Pariatur consequuntur nesciunt velit doloremque debitis, porro
+                repudiandae expedita sed laudantium laborum odit aliquid
+                aspernatur dolore soluta molestiae ducimus sequi autem quae.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="news">
+        <div class="container">
+          <div class="section-title">
+            <h5>Blog</h5>
+            <h3>Berita Terbaru</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iure,
+              ea consequatur unde quas corporis cum labore facere accusamus id
+            </p>
+          </div>
+          <div class="section-body">
+            <div class="news-card">
+              <div class="news-img">
+                <img
+                  src="https://kahmibonebol.or.id/l-content/uploads/penjabup22.jpg?1652329629634"
+                  alt=""
+                />
+              </div>
+              <div class="news-body">
+                <div class="news-date">12-09-2022</div>
+                <div class="news-title">
+                  Selamat atas dilantiknya Pejabat Gubernur Gorontalo
+                </div>
+              </div>
+            </div>
+            <div class="news-card">
+              <div class="news-img">
+                <img
+                  src="https://kahmibonebol.or.id/l-content/uploads/penjabup22.jpg?1652329629634"
+                  alt=""
+                />
+                <div class="news-body">
+                  <div class="news-date">12-09-2022</div>
+                  <div class="news-title">
+                    Selamat atas dilantiknya Pejabat Gubernur Gorontalo
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-card">
+              <div class="news-img">
+                <img
+                  src="https://kahmibonebol.or.id/l-content/uploads/penjabup22.jpg?1652329629634"
+                  alt=""
+                />
+              </div>
+              <div class="news-body">
+                <div class="news-date">12-09-2022</div>
+                <div class="news-title">
+                  Selamat atas dilantiknya Pejabat Gubernur Gorontalo
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-read-more">Baca lebih banyak</div>
+        </div>
+      </section>
+
+      <section class="lensa-kegiatan">
+        <div class="container">
+          <div class="section-lensa">
+            <h3><span>Lensa</span> Kegiatan</h3>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="https://i.pinimg.com/564x/aa/40/34/aa4034a09c3180296c72c96692e5c245.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://i.pinimg.com/474x/5e/64/3f/5e643fd2dcbc3acb71120620e06d061a.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://i.pinimg.com/474x/91/53/61/915361b8e7fc640785bae8e176bd467f.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://i.pinimg.com/474x/4e/46/d2/4e46d2c17914575f380e81b2c2ad1bc7.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://i.pinimg.com/474x/01/d4/d7/01d4d71022b4872125932fe69322f31b.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="program-kerja" class="program-kerja">
+        <div class="container">
+          <div class="section-kerja">
+            <div class="section-left">
+              <div class="card-kerja">Rapat Kerja Daerah</div>
+              <div class="card-kerja">SILATURAHIM Daerah</div>
+              <div class="card-kerja">Live Podcast</div>
+              <div class="card-kerja">Live Podcast</div>
+              <div class="card-kerja">Donor Darah & Vaksinasi</div>
+              <div class="card-kerja">Seminar</div>
+            </div>
+            <div class="section-right">
+              <h5>Kegiatan</h5>
+              <h3>Program Kerja</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                iure, ea consequatur unde quas corporis cum labore facere
+                accusamus id
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-bottom">
+        <section class="testimoni">
+          <div class="container">
+            <div class="section-title">
+              <h5>Testimonial</h5>
+              <h3>Apa Kata Orang</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                iure, ea consequatur unde quas corporis cum labore facere
+                accusamus id
+              </p>
+            </div>
+            <div class="section-body">
+              <div class="swiper-box">
+                <div class="swiper newSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper-message">Ganti Ketua, kurang</div>
+                      <div class="swiper-img">
+                        <img
+                          src="https://scontent.fmdc3-1.fna.fbcdn.net/v/t39.30808-6/240829416_3947619895349599_4017286978587238656_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=Jv6g6UBPozIAX8B_IEF&_nc_ht=scontent.fmdc3-1.fna&oh=00_AT_I6s3YiU0noMVm7wvtFqOIvWeMu74sGX1fBYAnSXtbGw&oe=63140FA3"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-author">Roiz</div>
+                      <div class="swiper-jabatan">Stafsus PETS</div>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pengurus">
+          <div class="container">
+            <div class="section-title">
+              <h5>Pengurus</h5>
+              <h3>MD KAHMI Kabupaten Sleman</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                iure, ea consequatur unde quas corporis cum labore facere
+                accusamus id
+              </p>
+            </div>
+            <div class="section-pengurus">
+              <div class="pengurus-info">
+                <img
+                  src="https://scontent.fmdc3-1.fna.fbcdn.net/v/t39.30808-6/258870369_603229787592564_6977181229570937025_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=dEm3jQnuX0MAX_WUTE0&_nc_ht=scontent.fmdc3-1.fna&oh=00_AT9pdTpJ16nJ-evV_kqx1pt7L4uosf-x1GUV8uZsvSWrnw&oe=6314A87A"
+                  alt=""
+                />
+                <div class="pengurus-desc">
+                  <p>Siti Wahyuni</p>
+                  <span>Wakil Bendahara</span>
+                </div>
+              </div>
+              <div class="pengurus-info">
+                <img
+                  src="https://scontent.fmdc3-1.fna.fbcdn.net/v/t39.30808-6/248284335_4460051807418817_8133383430139563789_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HxX-iog247cAX9zKI5s&_nc_ht=scontent.fmdc3-1.fna&oh=00_AT-wexayygIfTjubU7qWBme6LqRBH_oRnImCDfVHJV3tow&oe=63131E96"
+                  alt=""
+                />
+                <div class="pengurus-desc">
+                  <p>Widi Widana Pandu</p>
+                  <span>Ketua Harian</span>
+                </div>
+              </div>
+
+              <div class="pengurus-info">
+                <img
+                  src="https://scontent.fmdc3-1.fna.fbcdn.net/v/t39.30808-6/299841112_5393991230693884_6298202881040547826_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=7bGgOp4yZPYAX-6JScW&_nc_ht=scontent.fmdc3-1.fna&oh=00_AT9jKg1YgjJZ5sH5xpC1dfIionrVDjDEioJHXDEBqpoftQ&oe=6314046D"
+                  alt=""
+                />
+                <div class="pengurus-desc">
+                  <p>Valdy Arsyad</p>
+                  <span>Ketua Umum</span>
+                </div>
+              </div>
+              <div class="pengurus-info">
+                <img
+                  src="https://scontent.fmdc3-1.fna.fbcdn.net/v/t39.30808-6/241185902_4500873466635362_6265236414091454607_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=tA_J1qpNENsAX88sqhf&_nc_ht=scontent.fmdc3-1.fna&oh=00_AT-Wsoz-XR4uCDTnScUEnzwgPcPiJfkvwuksP0zuSLzJSA&oe=63132129"
+                  alt=""
+                />
+                <div class="pengurus-desc">
+                  <p>Valdy Arsyad</p>
+                  <span>Ketua Umum</span>
+                </div>
+              </div>
+              <div class="pengurus-info">
+                <img
+                  src="https://scontent.fmdc3-1.fna.fbcdn.net/v/t1.6435-9/200734158_550214652814283_8699587884647479351_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=qQm12Oe5cUAAX8yH55b&_nc_ht=scontent.fmdc3-1.fna&oh=00_AT8O5nbww95nfL6uoamojP5OH3HY5esc7RzO6QVgnHG1dw&oe=63364437"
+                  alt=""
+                />
+                <div class="pengurus-desc">
+                  <p>Valdy Arsyad</p>
+                  <span>Ketua Umum</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="spacer">
+        <svg
+          width="100%"
+          height="100%"
+          id="svg"
+          viewBox="0 0 1440 700"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <path
+            d="M 0,700 C 0,700 0,175 0,175 C 104.99521531100478,166.98086124401914 209.99043062200957,158.96172248803828 290,139 C 370.00956937799043,119.03827751196172 425.03349282296654,87.13397129186603 525,112 C 624.9665071770335,136.86602870813397 769.8755980861242,218.5023923444976 886,222 C 1002.1244019138758,225.4976076555024 1089.464114832536,150.85645933014354 1177,130 C 1264.535885167464,109.14354066985645 1352.2679425837318,142.07177033492823 1440,175 C 1440,175 1440,700 1440,700 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#00923e"
+            fill-opacity="0.4"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"
+          ></path>
+          <path
+            d="M 0,700 C 0,700 0,350 0,350 C 78.63157894736841,331.02392344497605 157.26315789473682,312.04784688995215 250,310 C 342.7368421052632,307.95215311004785 449.57894736842104,322.83253588516743 554,341 C 658.421052631579,359.16746411483257 760.4210526315788,380.622009569378 871,380 C 981.5789473684212,379.377990430622 1100.7368421052631,356.67942583732054 1197,348 C 1293.2631578947369,339.32057416267946 1366.6315789473683,344.66028708133973 1440,350 C 1440,350 1440,700 1440,700 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#00923e"
+            fill-opacity="0.53"
+            class="transition-all duration-300 ease-in-out delay-150 path-1"
+          ></path>
+          <path
+            d="M 0,700 C 0,700 0,525 0,525 C 114.21052631578945,532.9521531100479 228.4210526315789,540.9043062200957 310,550 C 391.5789473684211,559.0956937799043 440.52631578947376,569.334928229665 547,554 C 653.4736842105262,538.665071770335 817.4736842105264,497.755980861244 913,495 C 1008.5263157894736,492.244019138756 1035.578947368421,527.6411483253589 1112,539 C 1188.421052631579,550.3588516746411 1314.2105263157896,537.6794258373205 1440,525 C 1440,525 1440,700 1440,700 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#00923e"
+            fill-opacity="1"
+            class="transition-all duration-300 ease-in-out delay-150 path-2"
+          ></path>
+        </svg>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="footer-body">
+            <div class="footer-left">
+              <img src="img/kahmi.png" alt="" />
+              <h3>
+                MAJELIS DAERAH KAHMI KABUPATEN SLEMAN
+
+                <p>
+                  Majelis Daerah Korps Alumni Himpunan Mahasiswa Islam merupakan
+                  wadah pemersatu alumni HMI khususnya daerah Kabupaten Sleman
+                </p>
+              </h3>
+            </div>
+            <div class="footer-right">
+              <p>Jalan Gorongan V</p>
+              <p>Telp : 0821-5257-4152</p>
+              <p>Facebook : KAHMI</p>
+              <p>Email :</p>
+            </div>
+            <!-- <div class="map">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d710.3155008495173!2d121.94215756672553!3d0.4577346578062057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x327835b59cd5e517%3A0xdb8fd7a3c6279f06!2sSekretariat%20Kahmi%20Pohuwato!5e0!3m2!1sen!2sid!4v1661939423850!5m2!1sen!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div> -->
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("app").style.marginRight = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("app").style.marginRight = "0";
+      }
+
+      // <!-- Initialize Swiper -->
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      // Query Layar HP
+      const mediaQuery = window.matchMedia("(max-width: 600px)");
+      if (mediaQuery.matches) {
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          centeredSlides: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      }
+
+      var newSwipe = new Swiper(".newSwiper", {
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

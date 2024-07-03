@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  font-family: Poppins;
+}
+
+html,
+body {
+  background-color: #f9f9fe;
+}
+
+header {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.app {
+  transition: margin-right 0.5s;
+}
+
+/* sidemenu */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  background-color: #00923e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-radius: 20px 0 0 0;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+  background-color: #f3fdfa;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 36px;
+  /* margin-right: 50px; */
+}
+/* sidemenu */
+
+.header-left {
+  display: flex;
+  color: #00923e;
+  text-transform: uppercase;
+  align-items: center;
+  width: 350px;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.title h3 > span {
+  color: black;
+}
+
+.header-left img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.header-right {
+  display: flex;
+}
+
+.menu a {
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.menu a:hover {
+  color: #00923e;
+}
+.menu {
+  display: flex;
+}
+.btn-menu {
+  width: 20px;
+  display: none;
+  padding: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1280px;
+}
+
+.alumni {
+  background-color: #edf1f4;
+  border-radius: 10px 10px 140px 20px;
+  padding: 40px;
+}
+.alumni h3 {
+  color: #00923e;
+}
+
+.alumni span {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.alumni hr {
+  margin-top: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  display: flex;
+  background-color: #fff;
+  width: 300px;
+  border-radius: 10px;
+  /* padding: 10px; */
+  transition: all 0.5s ease-in;
+}
+.form-control:hover {
+  box-shadow: 2px 1.6px 3.6px rgba(0, 0, 0, 0.053),
+    6.7px 5.4px 12.1px rgba(0, 0, 0, 0.077), 30px 24px 54px rgba(0, 0, 0, 0.13);
+}
+.input-control {
+  border-radius: 10px;
+  /* width: 250px; */
+  /* padding: 10px; */
+  /* border-radius: 10px; */
+  outline: none;
+  border: none;
+  /* box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    100px 100px 80px rgba(0, 0, 0, 0.07); */
+  padding: 10px;
+}
+.btn-search {
+  outline: none;
+  border: none;
+  border-radius: 0px 10px 0 10px;
+  cursor: pointer;
+
+  background-color: #00923e;
+  color: #f9f9fe;
+  padding: 10px;
+}
+
+.btn-search svg {
+  width: 25px;
+}
+
+.alumni-card {
+  width: 270px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  margin-right: 10px;
+  /* background-color: red; */
+}
+
+.alumni-card img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+.alumni-desc {
+  color: gray;
+  font-size: 14px;
+}
+.alumni-bottom h3 {
+  margin-top: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.alumni-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .form-control {
+    width: 280px;
+  }
+  .btn-search {
+    margin-left: 50px;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* Tidak perlu */
+  header {
+    justify-content: space-between;
+  }
+  .menu {
+    display: none;
+  }
+  .btn-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+}

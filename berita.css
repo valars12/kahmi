@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  font-family: Poppins;
+}
+
+html,
+body {
+  background-color: #f9f9fe;
+}
+
+header {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.app {
+  transition: margin-right 0.5s;
+}
+
+/* sidemenu */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  background-color: #00923e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-radius: 20px 0 0 0;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+  background-color: #f3fdfa;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 36px;
+  /* margin-right: 50px; */
+}
+/* sidemenu */
+
+.header-left {
+  display: flex;
+  color: #00923e;
+  text-transform: uppercase;
+  align-items: center;
+  width: 350px;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.title h3 > span {
+  color: black;
+}
+
+.header-left img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.header-right {
+  display: flex;
+}
+
+.menu a {
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.menu a:hover {
+  color: #00923e;
+}
+.menu {
+  display: flex;
+}
+.btn-menu {
+  width: 20px;
+  display: none;
+  padding: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1280px;
+}
+.card-news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-box {
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  width: 350px;
+  height: 420px;
+  cursor: pointer;
+  /* background-color: red; */
+  background-color: #f9f9fe;
+}
+
+.card-box img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-body h6 {
+  color: gray;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: gray;
+}
+.author {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-read a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-read a:hover {
+  color: #00923e;
+}
+
+.btn-read {
+  text-align: center;
+  margin-top: 10px;
+  background-color: #00923e;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.2s ease-out;
+}
+.btn-read:hover {
+  background-color: transparent;
+  color: #00923e;
+}
+
+.news-page {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.active {
+  background-color: #00923e;
+  color: white;
+}
+
+.box {
+  background-color: gainsboro;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  margin-right: 10px;
+}
+
+.box svg {
+  width: 25px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .card-news {
+    flex-wrap: wrap;
+  }
+  .card-box {
+    margin-top: 35px;
+    width: 94%;
+    height: 400px;
+    transition: all 0.4s ease-in;
+  }
+
+  .card-box:hover {
+    transform: scale(1.07);
+  }
+
+  .card-body {
+    color: black;
+    background-color: #f9f9fe;
+  }
+  .news-page {
+    margin-top: 20px;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+  .spacer {
+    aspect-ratio: 200/100;
+  }
+  .menu {
+    display: none;
+  }
+  .btn-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  /* Udah */
+
+  .visimisi-box {
+    flex-wrap: wrap;
+  }
+  .misi {
+    margin-top: 10px;
+  }
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  .content {
+    width: 100%;
+  }
+
+  /* Full-width containers */
+  .container-timeline {
+    width: 60%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container-timeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+  .left {
+    margin-left: 0;
+  }
+}
+/* Timeline */
+
+.spacer {
+  aspect-ratio: 960/500;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Footer */
+footer {
+  margin-top: -50px;
+  bottom: 0;
+  padding: 20px;
+  color: black;
+  background-color: #00923e;
+}
+
+.footer-body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  flex: 0.6;
+}
+
+.footer-left h3 {
+  font-size: 28px;
+}
+
+.footer-left p {
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+}
+.footer-right {
+  flex: 0.3;
+}
+
+footer img {
+  width: 150px;
+  height: 100px;
+  margin-right: 20px;
+}

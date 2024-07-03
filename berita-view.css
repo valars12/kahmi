@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  font-family: Poppins;
+}
+
+html,
+body {
+  background-color: #f9f9fe;
+}
+
+header {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.app {
+  transition: margin-right 0.5s;
+}
+
+/* sidemenu */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  background-color: #00923e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-radius: 20px 0 0 0;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+  background-color: #f3fdfa;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 36px;
+  /* margin-right: 50px; */
+}
+/* sidemenu */
+
+.header-left {
+  display: flex;
+  color: #00923e;
+  text-transform: uppercase;
+  align-items: center;
+  width: 350px;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.title h3 > span {
+  color: black;
+}
+
+.header-left img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.header-right {
+  display: flex;
+}
+
+.menu a {
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.menu a:hover {
+  color: #00923e;
+}
+.menu {
+  display: flex;
+}
+.btn-menu {
+  width: 20px;
+  display: none;
+  padding: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1280px;
+}
+
+/* .news-content {
+  display: flex;
+  /* flex-direction: column; 
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+} */
+.news {
+  background-color: #edf1f4;
+  border-radius: 10px 10px 140px 20px;
+  padding: 40px;
+}
+
+.news-content {
+  display: flex;
+  padding: 0 40px 40px 40px;
+
+  /* width: 95%; */
+  justify-content: space-between;
+}
+.news-title {
+  margin-bottom: 10px;
+  font-size: 28px;
+  width: 600px;
+  font-weight: 600;
+  color: #00923e;
+}
+.news-box {
+  flex: 0.2;
+}
+.news-right {
+  /* width: 50%; */
+}
+
+.news-right hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.news-list {
+  width: 75%;
+  padding: 10px;
+  /* border-top: 1px dotted; */
+}
+.dotted {
+  margin-bottom: 10px;
+  border-bottom: 1px dotted;
+}
+.news-list-title {
+  margin-bottom: 10px;
+  color: #00923e;
+  font-weight: 600;
+  width: 340px;
+}
+.news-list-title p {
+  color: grey;
+  font-size: 12px;
+  margin-top: 5px;
+}
